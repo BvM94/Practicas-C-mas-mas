@@ -1,8 +1,14 @@
 #include "Hora.h"
 
+#include <iostream>
+#include <stdexcept>
+#include <exception>
+
+using namespace std;
+
 Hora::Hora(int h , int m , int s) //constructor
 {
-    validar_hora(h,m,s);
+//    validar_hora(h,m,s);
     this->seg = h * 3600 + m *60 + s;
 }
 
@@ -77,6 +83,6 @@ iostream& operator<<(iostream& sal ,Hora & hora)
     int h,m,s;
     hora.get_HMS(h,m,s);
 
-    sal<<h<<":"<<m<<":"<<s;
+    sal<<h<<":"<<m<<":"<<s<<endl;
     return sal;
 }
