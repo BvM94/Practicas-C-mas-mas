@@ -17,11 +17,11 @@ Hora::Hora()
     this->seg = 0;
 }
 
-void Hora::validar_hora(int h, int m, int s)
-{
-    if( h<0 || m<0 || m>=60 || s>=60 || s<0 )
-       throw exception("Fecha Invalida");
-}
+//void Hora::validar_hora(int h, int m, int s)
+//{
+//    if( h<0 || m<0 || m>=60 || s>=60 || s<0 )
+//       throw exception("Fecha Invalida");
+//}
 
 Hora Hora::operator+(const Hora& otra)const
 {

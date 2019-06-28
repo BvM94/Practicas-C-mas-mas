@@ -34,8 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Cadena.h" />
 		<Unit filename="include/Hora.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Cadena.cpp" />
 		<Unit filename="src/Hora.cpp" />
 		<Extensions>
 			<code_completion />
