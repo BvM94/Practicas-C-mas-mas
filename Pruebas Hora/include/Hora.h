@@ -27,12 +27,14 @@ class Hora
         bool operator==(const Hora& otra)const;
         bool operator!=(const Hora& otra)const;
 
-        void get_HMS(int &h , int &m, int &s);
+        void get_HMS(int &h , int &m, int &s)const;
+        void set_HMS(int &h , int &m, int &s);
+        friend ostream& operator<<(ostream& sal ,const Hora & hora);
+        friend istream& operator>>(istream& ent,Hora &hora);
 
 
     protected:
 };
 
-iostream& operator<<(iostream& sal ,Hora & hora);
 
 #endif // HORA_H

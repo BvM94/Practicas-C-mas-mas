@@ -58,3 +58,9 @@ Cadena & Cadena::operator +=(const Cadena& cad)
     strcat(this->vcad,cad.vcad);
     return *this;
 }
+
+ostream& operator<<(ostream & sal ,const Cadena& cad)
+{
+    sal<<cad.vcad;
+    return sal;
+}

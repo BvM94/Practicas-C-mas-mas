@@ -2,6 +2,11 @@
 #define CADENA_H
 
 #include <string.h>
+#include <iostream>
+#include <exception>
+#include <stdexcept>
+
+using namespace std;
 
 
 class Cadena
@@ -18,6 +23,7 @@ class Cadena
 
         Cadena & operator +=(const Cadena& cad);
         Cadena operator +(const Cadena & cad)const;
+        friend ostream& operator<<(ostream & sal ,const Cadena& cad);
 
 
     protected:
